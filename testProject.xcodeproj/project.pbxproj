@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE73B6301BDF749D00DFE5C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */; };
 		CEA909BB1BDF2A5E000B048C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */; };
 		CEA909BD1BDF2A5E000B048C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BC1BDF2A5E000B048C /* ViewController.swift */; };
 		CEA909C01BDF2A5E000B048C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA909BE1BDF2A5E000B048C /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEA909B51BDF2A5E000B048C /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA909B91BDF2A5E000B048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE73B6301BDF749D00DFE5C7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		CEA909AC1BDF2A5E000B048C = {
 			isa = PBXGroup;
 			children = (
+				CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */,
 				CEA909B71BDF2A5E000B048C /* testProject */,
 				CEA909CD1BDF2A5E000B048C /* testProjectTests */,
 				CEA909B61BDF2A5E000B048C /* Products */,
@@ -411,6 +415,7 @@
 				CEA909D61BDF2A5E000B048C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA909D71BDF2A5E000B048C /* Build configuration list for PBXNativeTarget "testProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				CEA909D91BDF2A5E000B048C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
