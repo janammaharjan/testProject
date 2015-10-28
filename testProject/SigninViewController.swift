@@ -11,16 +11,22 @@ import MapKit
 import CoreLocation
 
 
-class ViewController: UIViewController {
+class SigninViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var locationInfo: UILabel!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let testObject2 = PFObject(className: "TestObject")
+      
+        // TESTING PARSE CONNECTION
+        
+        /* let testObject2 = PFObject(className: "TestObject")
         testObject2["foo"] = "bar"
         testObject2.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             println("Object has been saved.")
@@ -28,18 +34,18 @@ class ViewController: UIViewController {
         testObject2["foo"] = "Janam"
         testObject2.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             println("Object has been saved.")
-        }
+        }*/
         
         
         //Map
         
-        var location = CLLocationCoordinate2DMake(8.8583736, 2.2922926)
+       var location = CLLocationCoordinate2DMake(8.8583736, 2.2922926)
           var location2 = CLLocationCoordinate2DMake(8.8573736+0.01, 2.2932926)
         var span = MKCoordinateSpanMake(1, 1)
         var region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         
-        /*var annotation2 = MKPointAnnotation()
+       /*var annotation2 = MKPointAnnotation()
         var annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation2.coordinate = location2
@@ -49,7 +55,9 @@ class ViewController: UIViewController {
         
         mapView.addAnnotation(annotation)
         mapView.addAnnotation(annotation2)
+
         */
+        
         var x = 8.8583736
         var y = 2.2922926
         
@@ -64,17 +72,15 @@ class ViewController: UIViewController {
             mapView.addAnnotation(annotation3)
             
         }
-            }
-
-    @IBAction func updateLocation(sender: AnyObject) {
+    
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func signInTouched(sender: UIButton) {
+    }
+   
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
 
 
 }
-

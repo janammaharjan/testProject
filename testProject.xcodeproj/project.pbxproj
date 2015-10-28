@@ -21,9 +21,11 @@
 		CE51A0951BE08E0900EA4DAA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A0941BE08E0900EA4DAA /* libsqlite3.dylib */; };
 		CE51A0971BE08E1000EA4DAA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A0961BE08E1000EA4DAA /* Accounts.framework */; };
 		CE51A0991BE08E1400EA4DAA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51A0981BE08E1400EA4DAA /* Social.framework */; };
+		CE51A0A31BE0B46D00EA4DAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51A0A21BE0B46D00EA4DAA /* MainViewController.swift */; };
+		CE51A0A71BE0B53C00EA4DAA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51A0A61BE0B53C00EA4DAA /* SignUpViewController.swift */; };
 		CE73B6301BDF749D00DFE5C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */; };
 		CEA909BB1BDF2A5E000B048C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */; };
-		CEA909BD1BDF2A5E000B048C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BC1BDF2A5E000B048C /* ViewController.swift */; };
+		CEA909BD1BDF2A5E000B048C /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BC1BDF2A5E000B048C /* SigninViewController.swift */; };
 		CEA909C01BDF2A5E000B048C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA909BE1BDF2A5E000B048C /* Main.storyboard */; };
 		CEA909C21BDF2A5E000B048C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA909C11BDF2A5E000B048C /* Images.xcassets */; };
 		CEA909C51BDF2A5E000B048C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA909C31BDF2A5E000B048C /* LaunchScreen.xib */; };
@@ -56,11 +58,13 @@
 		CE51A0961BE08E1000EA4DAA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		CE51A0981BE08E1400EA4DAA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CE51A09A1BE090EF00EA4DAA /* testProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testProject-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		CE51A0A21BE0B46D00EA4DAA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE51A0A61BE0B53C00EA4DAA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEA909B51BDF2A5E000B048C /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA909B91BDF2A5E000B048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA909BC1BDF2A5E000B048C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA909BC1BDF2A5E000B048C /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		CEA909BF1BDF2A5E000B048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA909C11BDF2A5E000B048C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEA909C41BDF2A5E000B048C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -124,6 +128,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE51A09D1BE0B13F00EA4DAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE51A09E1BE0B14B00EA4DAA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA909BC1BDF2A5E000B048C /* SigninViewController.swift */,
+				CE51A0A21BE0B46D00EA4DAA /* MainViewController.swift */,
+				CE51A0A61BE0B53C00EA4DAA /* SignUpViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CEA909AC1BDF2A5E000B048C = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +152,6 @@
 				CEA909B71BDF2A5E000B048C /* testProject */,
 				CEA909CD1BDF2A5E000B048C /* testProjectTests */,
 				CEA909B61BDF2A5E000B048C /* Products */,
-				CE51A09A1BE090EF00EA4DAA /* testProject-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,11 +167,10 @@
 		CEA909B71BDF2A5E000B048C /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE51A09E1BE0B14B00EA4DAA /* View Controllers */,
+				CE51A09D1BE0B13F00EA4DAA /* Model */,
 				CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */,
-				CEA909BC1BDF2A5E000B048C /* ViewController.swift */,
 				CEA909BE1BDF2A5E000B048C /* Main.storyboard */,
-				CEA909C11BDF2A5E000B048C /* Images.xcassets */,
-				CEA909C31BDF2A5E000B048C /* LaunchScreen.xib */,
 				CEA909B81BDF2A5E000B048C /* Supporting Files */,
 			);
 			path = testProject;
@@ -160,6 +179,9 @@
 		CEA909B81BDF2A5E000B048C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEA909C11BDF2A5E000B048C /* Images.xcassets */,
+				CEA909C31BDF2A5E000B048C /* LaunchScreen.xib */,
+				CE51A09A1BE090EF00EA4DAA /* testProject-Bridging-Header.h */,
 				CEA909B91BDF2A5E000B048C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -282,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA909BD1BDF2A5E000B048C /* ViewController.swift in Sources */,
+				CE51A0A31BE0B46D00EA4DAA /* MainViewController.swift in Sources */,
+				CEA909BD1BDF2A5E000B048C /* SigninViewController.swift in Sources */,
+				CE51A0A71BE0B53C00EA4DAA /* SignUpViewController.swift in Sources */,
 				CEA909BB1BDF2A5E000B048C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
