@@ -24,7 +24,11 @@
 		CE51A0A31BE0B46D00EA4DAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51A0A21BE0B46D00EA4DAA /* MainViewController.swift */; };
 		CE51A0A71BE0B53C00EA4DAA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51A0A61BE0B53C00EA4DAA /* SignUpViewController.swift */; };
 		CE51A0A91BE0D99A00EA4DAA /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51A0A81BE0D99A00EA4DAA /* SignUp.swift */; };
+		CE614C041BE32C6D009CF90A /* onAir.png in Resources */ = {isa = PBXBuildFile; fileRef = CE614C021BE32C6D009CF90A /* onAir.png */; };
+		CE614C061BE331A7009CF90A /* liveNow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE614C051BE331A7009CF90A /* liveNow.png */; };
+		CE614C081BE33287009CF90A /* live.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE614C071BE33287009CF90A /* live.gif */; };
 		CE73B6301BDF749D00DFE5C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */; };
+		CE9B6F2A1BE1F3FF003AD57B /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B6F291BE1F3FF003AD57B /* SignIn.swift */; };
 		CEA909BB1BDF2A5E000B048C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */; };
 		CEA909BD1BDF2A5E000B048C /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA909BC1BDF2A5E000B048C /* SigninViewController.swift */; };
 		CEA909C01BDF2A5E000B048C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA909BE1BDF2A5E000B048C /* Main.storyboard */; };
@@ -62,7 +66,11 @@
 		CE51A0A21BE0B46D00EA4DAA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE51A0A61BE0B53C00EA4DAA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE51A0A81BE0D99A00EA4DAA /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		CE614C021BE32C6D009CF90A /* onAir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = onAir.png; sourceTree = "<group>"; };
+		CE614C051BE331A7009CF90A /* liveNow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liveNow.png; sourceTree = "<group>"; };
+		CE614C071BE33287009CF90A /* live.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = live.gif; sourceTree = "<group>"; };
 		CE73B62F1BDF749D00DFE5C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE9B6F291BE1F3FF003AD57B /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		CEA909B51BDF2A5E000B048C /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA909B91BDF2A5E000B048C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA909BA1BDF2A5E000B048C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				CE51A0A81BE0D99A00EA4DAA /* SignUp.swift */,
+				CE9B6F291BE1F3FF003AD57B /* SignIn.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				CEA909C11BDF2A5E000B048C /* Images.xcassets */,
+				CE614C071BE33287009CF90A /* live.gif */,
+				CE614C051BE331A7009CF90A /* liveNow.png */,
+				CE614C021BE32C6D009CF90A /* onAir.png */,
 				CEA909C31BDF2A5E000B048C /* LaunchScreen.xib */,
 				CE51A09A1BE090EF00EA4DAA /* testProject-Bridging-Header.h */,
 				CEA909B91BDF2A5E000B048C /* Info.plist */,
@@ -289,7 +301,10 @@
 			files = (
 				CEA909C01BDF2A5E000B048C /* Main.storyboard in Resources */,
 				CEA909C51BDF2A5E000B048C /* LaunchScreen.xib in Resources */,
+				CE614C061BE331A7009CF90A /* liveNow.png in Resources */,
 				CEA909C21BDF2A5E000B048C /* Images.xcassets in Resources */,
+				CE614C081BE33287009CF90A /* live.gif in Resources */,
+				CE614C041BE32C6D009CF90A /* onAir.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE51A0A31BE0B46D00EA4DAA /* MainViewController.swift in Sources */,
+				CE9B6F2A1BE1F3FF003AD57B /* SignIn.swift in Sources */,
 				CEA909BD1BDF2A5E000B048C /* SigninViewController.swift in Sources */,
 				CE51A0A71BE0B53C00EA4DAA /* SignUpViewController.swift in Sources */,
 				CEA909BB1BDF2A5E000B048C /* AppDelegate.swift in Sources */,

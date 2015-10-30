@@ -8,13 +8,16 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
 
+
+class MainViewController : UIViewController {
+
+
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        let currentUser = PFUser.currentUser()
-        if currentUser != nil
+        if PFUser.currentUser() != nil
         {
             //do something
         }
@@ -23,6 +26,8 @@ class MainViewController: UIViewController {
         {
             self.performSegueWithIdentifier("goSignin", sender: self)
         }
+
+        
         
         
     }
